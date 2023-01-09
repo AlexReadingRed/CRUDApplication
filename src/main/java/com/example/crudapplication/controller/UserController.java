@@ -17,7 +17,7 @@ public class UserController {
     private UserRepo userRepo;
 
     @GetMapping("/getAllUsers")
-    public ResponseEntity<List<User>> getAllBooks() {
+    public ResponseEntity<List<User>> getAllUsers() {
         try {
             List<User> userList = new ArrayList<>();
             userRepo.findAll().forEach(userList::add);
